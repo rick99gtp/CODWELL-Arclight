@@ -3,9 +3,16 @@
     --active-button: #e7e8fe;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: var(--bg);
     padding: 20px;
+    font-family: 'Bitter', serif;
 }
 
 .fl {
@@ -45,11 +52,15 @@ body {
     list-style-type: none;
     width: 300px;
     font-size: 18px;
-    font-family: Merriweather;
+    font-family: 'Merriweather', serif;
 }
 
 .hero header nav ul li {
     padding: 10px;
+}
+
+.hero header nav ul li a {
+    text-decoration: none;
 }
 
 .cta-btn {
@@ -57,7 +68,6 @@ body {
     background: var(--bg);
     color: white;
     border-radius: 5px;
-    font-family: 'Bitter', serif;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -78,8 +88,8 @@ body {
 
 .hero__info-main--left h1 {
     font-size: 56px;
-    font-family: 'Bitter', serif;
     font-weight: bold;
+    margin: 0;
 }
 
 .hero__info-main--right {
@@ -92,8 +102,8 @@ body {
 
 .hero__info-main--left h2 {
     font-size: 18px;
-    font-family: 'Bitter', serif;
     font-weight: normal;
+    margin-top: 8px;
 }
 
 .left__cta--icon {
@@ -105,7 +115,30 @@ body {
 }
 
 .left__cta--icon p {
-    font-family: 'Bitter', serif;
     font-size: 18px;
     margin-left: 12px;
+}
+
+.hero__info-main--left-cta {
+    margin-bottom: 36px;
+    margin-top: 24px;
+}
+
+.hero__stars {
+    display: flex;
+    align-items: center;
+}
+
+.hero__stars p {
+    margin-left: 16px;
+}
+
+.logos {
+    padding: 80px 60px 0 0;
+    justify-content: center;
+    background: white;
+}
+
+.logos img {
+    opacity: .4;
 }
